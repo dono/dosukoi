@@ -21,21 +21,21 @@ $ ./dosukoi -i en0
 2017/09/24 06:01:57 Starting capture on interface "en0"
 2017/09/24 06:01:57 reading in packets
 -----------------------------------------------------
-Date:		    2017/09/24 06:02:00
-Method:		    GET
-URL:		    http://example.com/
-Basic-Auth: 	user:pass
-Referer:	    http://example.com
-UserAgent:  	curl/7.54.0
-Source:		    192.168.0.1:63990 (ab:cd:12:34:ef:gh)
-Destination:	93.184.26.34:80 (hg:fg:11:23:ab:cd)
+Date:         2017/09/24 06:02:00
+Method:       GET
+URL:          http://example.com/
+Basic-Auth:   user:pass
+Referer:      http://example.com
+UserAgent:    curl/7.54.0
+Source:       192.168.0.1:63990 (ab:cd:12:34:ef:gh)
+Destination:  93.184.26.34:80 (hg:fg:11:23:ab:cd)
 -----------------------------------------------------
-Date:		    2017/09/24 06:02:25
-Method:		    GET
-URL:		    http://h0ge.net/
-UserAgent:  	curl/7.54.0
-Source:		    192.168.0.1:63992 (fa:ke:ma:ca:dd:rs)
-Destination:	104.198.14.52:80 (aa:ii:uu:ee:oo:kk)
+Date:         2017/09/24 06:02:25
+Method:       GET
+URL:          http://h0ge.net/
+UserAgent:    curl/7.54.0
+Source:       192.168.0.1:63992 (fa:ke:ma:ca:dd:rs)
+Destination:  104.198.14.52:80 (aa:ii:uu:ee:oo:kk)
 
 ```
 
