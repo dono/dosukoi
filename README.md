@@ -45,7 +45,8 @@ Destination:  104.198.14.52:80 (aa:ii:uu:ee:oo:kk)
 {"Date":"2017/09/24 06:02:25","HTTP":{"URL":"http://h0ge.net/","Method":"GET","Version":"HTTP/1.1","BasicAuth":"","UseProxy":false,"ProxyAuth":"","Referer":"","UserAgent":"curl/7.54.0"},"SrcPort":"63992","DstPort":"80","SrcIP":"192.168.0.1","DstIP":"104.198.14.52","SrcMAC":"ka:ke:ma:ca:dd:rs","DstMAC":"aa:ii:uu:ee:oo:kk"}
 
 ```
-Logs are written in json lines format (http://jsonlines.org/)
+- Logs are written in json lines format (http://jsonlines.org/)
+- `jq` command is useful (ex.  `$ cat log.jsonl | jq 'select(.HTTP.BasicAuth != "")'`)
 
 
 ## Note
