@@ -17,7 +17,7 @@ Command to read and parse HTTP-Request packets
 ## Examples
 ### Standard output
 ```
-$ ./dosukoi -i en0
+$ ./dosukoi -i en0 -l log.jsonl
 2017/09/24 06:01:57 Starting capture on interface "en0"
 2017/09/24 06:01:57 reading in packets
 -----------------------------------------------------
@@ -45,11 +45,11 @@ Destination:  104.198.14.52:80 (aa:ii:uu:ee:oo:kk)
 {"Date":"2017/09/24 06:02:25","HTTP":{"URL":"http://h0ge.net/","Method":"GET","Version":"HTTP/1.1","BasicAuth":"","UseProxy":false,"ProxyAuth":"","Referer":"","UserAgent":"curl/7.54.0"},"SrcPort":"63992","DstPort":"80","SrcIP":"192.168.0.1","DstIP":"104.198.14.52","SrcMAC":"ka:ke:ma:ca:dd:rs","DstMAC":"aa:ii:uu:ee:oo:kk"}
 
 ```
+Logs are written in json lines format (http://jsonlines.org/)
 
 
-## Notes
+## Note
 - HTTPリクエストパケットのデフラグは行っていないため、第一パケットから漏れた情報は捨てられます
-- ログファイルは1行につき1リクエストずつJson形式で書き込まれます
 
 
 ## Licence
